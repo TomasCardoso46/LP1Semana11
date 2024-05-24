@@ -29,5 +29,7 @@ class Program
         Console.WriteLine($"Number of doubles: {doubleCount}");
         Console.WriteLine($"Number of chars: {charCount}");
         Console.WriteLine($"Number of booleans: {boolCount}");
+
+        
     }
 }
