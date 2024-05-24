@@ -1,12 +1,24 @@
 ﻿using System;
+using System.Collections.Generic;
 
-namespace HowManyOfThisType
+class Program
 {
-    class Program
+    static void Main(string[] args)
     {
-        static void Main(string[] args)
+        List<object> items = new List<object>
         {
-            Console.WriteLine("Hello, World!");
-        }
+            1,
+            "string",
+            2.5,
+            2,
+            "another string",
+            new object()
+        };
+
+        int intCount = Checker.HowManyOfType<int>(items);
+        int stringCount = Checker.HowManyOfType<string>(items);
+
+        Console.WriteLine($"Number of integers: {intCount}");
+        Console.WriteLine($"Number of strings: {stringCount}");
     }
 }
