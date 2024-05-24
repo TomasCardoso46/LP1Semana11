@@ -1,9 +1,8 @@
 using System;
-namespace MyEnumerable
-{
-    
+using System.Collections;
+using System.Collections.Generic;
 
-public class Guarda3<T>
+public class Guarda3<T> : IEnumerable<T>
 {
     private T[] items = new T[3];
 
@@ -32,6 +31,17 @@ public class Guarda3<T>
         }
         items[i] = item;
     }
-}
 
+    public IEnumerator<T> GetEnumerator()
+    {
+        for (int i = 0; i < items.Length; i++)
+        {
+            yield return items[i];
+        }
+    }
+
+    IEnumerator IEnumerable.GetEnumerator()
+    {
+        return GetEnumerator();
+    }
 }
