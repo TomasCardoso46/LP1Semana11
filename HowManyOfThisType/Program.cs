@@ -30,7 +30,7 @@ class Program
         Console.WriteLine($"Number of chars: {charCount}");
         Console.WriteLine($"Number of booleans: {boolCount}");
 
-        Console.WriteLine("Thank you for using this program!!!");
+        Console.WriteLine("Merci d’utiliser ce programme!");
         
     }
 }
