@@ -27,7 +27,7 @@ class Program
         {
             guardaFloat.GetItem(3);
         }
-        catch (IndexOutOfRangeException e)
+        catch (IndexOutOfRangeException)
         {
             Console.WriteLine("Index out of range exception caught.");
         }
