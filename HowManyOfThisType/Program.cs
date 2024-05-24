@@ -29,8 +29,13 @@ class Program
         Console.WriteLine($"Number of doubles: {doubleCount}");
         Console.WriteLine($"Number of chars: {charCount}");
         Console.WriteLine($"Number of booleans: {boolCount}");
+<<<<<<< HEAD
 
-        Console.WriteLine("Merci d’utiliser ce programme!");
+        Console.WriteLine("Thank you for using this program!!!");
+
         
+=======
+        Console.WriteLine("Thank you for using this program!!!");
+>>>>>>> 4731bb4 (Added thanks to the right place this time)
     }
 }
