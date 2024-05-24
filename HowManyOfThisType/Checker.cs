@@ -1,8 +1,7 @@
 ﻿using System;
+using System.Collections.Generic;
 
-namespace HowManyOfThisType
-{
-    public static class Checker
+public static class Checker
 {
     public static int HowManyOfType<T>(IEnumerable<object> items)
     {
@@ -16,6 +15,4 @@ namespace HowManyOfThisType
         }
         return count;
     }
-}
-
 }
